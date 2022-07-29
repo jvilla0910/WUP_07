@@ -26,8 +26,8 @@ state of a patient must be died or alive - we adjust that as well
   
 # Question 1 - Is dying independent of sex
 
-
-
+$H_o$ : Dying is not dependent on sex   
+$H_a$: Dying is dependent on sex
 
 Table of patients:
 ```{r}
@@ -37,6 +37,8 @@ Table of patients:
 with(kRdata, table(Sex, result))
 
 ```
+
+By looking at the numbers above females with covid outlive the decrease more often then men. 
 
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
