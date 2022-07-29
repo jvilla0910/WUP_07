@@ -29,6 +29,7 @@ state of a patient must be died or alive - we adjust that as well
 $H_o$ : Dying is not dependent on sex   
 $H_a$: Dying is dependent on sex
 
+
 Table of patients:
 ```{r}
 
