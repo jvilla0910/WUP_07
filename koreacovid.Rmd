@@ -56,6 +56,13 @@ This chart shows that men survive covid nearly as often as women do. However it 
 
 ## Numerical results
 
+```{r}
+table2 <- xtabs(~Sex + result, data=kRdata)
+rowPerc(table2)
+colPerc(table2)
+```
+
+Females survive covid 98.7% of the time while men survive covid 97% of the time. These numbers are close in survival result. However, females die 1.4% of the time and males die 3% of the time when they contact covid.
 
 ## Inferential results 
 
