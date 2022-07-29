@@ -66,8 +66,17 @@ Females survive covid 98.7% of the time while men survive covid 97% of the time.
 
 ## Inferential results 
 
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+#fisherXY(kRdata$Sex, kRdata$result)
+```
 
+```{r}
+fisher.test(table(kRdata$Sex, kRdata$result))
+```
 
+The Chi-square text p-value is 0.0012 less than 0.05. The odds ratio is 2x times greater that men will die from covid. I reject the null hypothesis that sex is not a factor that affects deaths after contracting covid. I accept the alternative hypothesis that sex is a factor that contributes to death after contracting the covid virus.
 
 ## Conclusions
 
