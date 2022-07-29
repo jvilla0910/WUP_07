@@ -80,3 +80,4 @@ The Chi-square text p-value is 0.0012 less than 0.05. The odds ratio is 2x times
 
 ## Conclusions
 
+In this assignment we are to determine whether or not Sex is a factor that determines if a person dies after contacting the covid virus. Based on the P-value of 0.0012 and the odds ratio of 2.3 males die more often then females after contacting covid. Therefore, I reject the null hypothesis and accept the alternative hypothesis death is dependent on the sex of the individual. 
