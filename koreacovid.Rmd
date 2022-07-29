@@ -29,7 +29,6 @@ state of a patient must be died or alive - we adjust that as well
 $H_o$ : Dying is not dependent on sex   
 $H_a$: Dying is dependent on sex
 
-
 Table of patients:
 ```{r}
 
@@ -43,15 +42,18 @@ By looking at the numbers above females with covid outlive the decrease more oft
 
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
+```{r}
+dd2 <- kRdata %>% group_by(Sex,result) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+# the group_by followed by summarize(count=n())
+basicC <- ggplot(dd2,aes(x=Sex,y=count,fill=result))
+basicC + geom_bar(stat="identity",position="dodge")
+#Now for percentage plot
+basicCC <- ggplot(dd2,aes(x=Sex,y=prcnt*100,fill=result)) 
+basicCC + geom_bar(stat="identity",position = "dodge")
+```  
 
-  
+This chart shows that men survive covid nearly as often as women do. However it still shows that males die more often then females but not by much. 
 
-
-
-
-
-  
 ## Numerical results
 
 
